@@ -1,0 +1,14 @@
+{
+  "name": "url-shortener-root",
+  "version": "1.0.0",
+  "description": "Production-ready URL Shortener Application",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend && npm install",
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "start": "concurrently \"npm start --prefix backend\" \"npm start --prefix frontend\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
